@@ -1,0 +1,35 @@
+/* ENTRANCE */
+
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    background-color: rgb(211, 62, 62);
+}
+main{
+    text-align: center;
+    content: center;
+}
+#form{
+    width: 50%;
+    height: 33em;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+#title{
+    font-size: 333%;
+}
+#form:hover{
+    background-color: rgb(231, 110, 110);
+}
+#valid{
+    background: linear-gradient(to left, rgb(73, 10, 10), rgb(150, 12, 12));
+    color: rgb(216, 216, 216);
+    padding: 1%;
+    border-radius: 10px;
+}

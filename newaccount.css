@@ -1,0 +1,21 @@
+main{
+    display: block;
+    text-align: center;
+}
+input{
+    width: 30%;
+    font-size: 200%;
+}
+select{
+    width: 30%;
+    font-size: 200%;
+}
+
+#confirm{
+    padding: 3px;
+    box-shadow: 2px 2px 2px black;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(216, 216, 216);
+
+}

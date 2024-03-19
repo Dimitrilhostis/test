@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Muscu</title>
+        <link  rel = "stylesheet" type = "text/css" href = "style.css"></link>
+        <link  rel = "stylesheet" type = "text/css" href = "index.css"></link>
+
+    </head>
+
+    <body>
+
+        <header>
+            <nav id="header_menu" style="display: block;">
+                <ul>
+                    <li><a href="" id="index">Muscu</a></li>
+                    <li><a href="track.html">track</a></li>
+                    <li><a href="shop.html">shop</a> </li>
+                    <li><a href="idea.html">idea</a></li>
+                    <li><img src="img/menu.png" onclick="open_close_menu()"></li> 
+                </ul>
+            </nav>
+            <img src="img/menu.png" id="menu" onclick="open_close_menu()" style="display: none;">
+
+            <script>
+                function open_close_menu() {
+                    console.log("call");
+                    let menu = document.getElementById("header_menu");
+                    let logo = document.getElementById("menu");
+                    if (menu.style.display === "block") {
+                        menu.style.display = "none";
+                        logo.style.display = "block"
+                    } else {
+                        menu.style.display = "block";
+                        logo.style.display = "none"
+                    }
+                    }
+            </script>
+
+        </header>
+
+        <main>
+            <div>
+                <h1>La page d'entrée, avec toutes les infos nécessaires</h1>
+                <p>Ici sera affichée une option "nouveau programme", ou il faudra renseigner poids, age etc...</p>
+                <p>Possibilité de créer son propre programme, et de le partager avec ses amis</p>
+            </div>
+
+            <div id="new_prog">
+
+                <a href="programme1.html">
+                <img src="img/esther.jpg"></img>
+                <p>Programme 1</p>
+                </a>
+
+                <a href="programme2.html">
+                <img src="img/menu.png"></img>
+                <p>Programme 2</p>
+                </a>
+
+                <a href="new_prog.html">
+                <div>+</div>
+                <p>Ajouter un programmme</p>
+                </a>
+                
+            </div>
+
+        </main>
+
+        <footer>
+
+            <a href="../../Code/MonSite/index.html">Thanks Goodbye</a>
+            <a href="entrance.html">Entrance</a>
+
+        </footer>
+
+    </body>
+
+</html>

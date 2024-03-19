@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Muscu</title>
+        <link  rel = "stylesheet" type = "text/css" href = "style.css"></link>
+
+    </head>
+
+    <body>
+
+        <header>
+            <nav id="header_menu" style="display: block;">
+                <ul>
+                    <li><a href="index.html" id="index">Muscu</a></li> 
+                    <li><a href="track.html">track</a></li>
+                    <li><a href="">shop</a> </li>
+                    <li><a href="idea.html">idea</a></li>
+                    <li><img src="img/menu.png" onclick="open_close_menu()"></li> 
+                </ul>
+            </nav>
+            <img src="img/menu.png" id="menu" onclick="open_close_menu()" style="display: none;">
+
+            <script>
+                function open_close_menu() {
+                    console.log("call");
+                    var menu = document.getElementById("header_menu");
+                    let logo = document.getElementById("menu");
+                    if (menu.style.display === "block") {
+                        menu.style.display = "none";
+                        logo.style.display = "block"
+                    } else {
+                        menu.style.display = "block";
+                        logo.style.display = "none"
+                    }
+                    }
+            </script>
+
+        </header>
+
+        <main>
+
+            <h1>Ici je vais juste afficher toutes mes idées pour le site ou autre chose, si j'ai vraiment de l'inspi</h1>
+            <p>Le but ça va être de faire un peu comme Apple, une interface qui claque, simple et satisfaisante d'utilisation</p>
+            <p>Donc, en gros on a le site de muscu, qui permet de faire ses programmes machin. Avec, on rajoute la possibilité de tracker ses journées, de les organiser.</p>
+            <p id="before1">On pourra aussi mettre des méthodes de cours, d'apprentissage, de discipline... Ou encore des phrases motivation avec chatGPT qui en fourni une différente chaque jour.</p>
+            <p>Pourquoi pas écrire un livre qui accompagnerait le site, avec les connaissances d'apprentissage nécessaires, les méthodes etc..</p>
+
+            <input type="text" placeholder="Rajouter du texte" id="text1">
+            <button onclick="add_text1()">Ok</button>
+
+
+            <h1>Dans ce livre :</h1>
+            <p id="before2">Écrire comment avoir une vie stable et épanouie, avec la gestion de l'argent, des relations, du taff, des loisirs, l'équilibre entre tout ça etc..</p>
+
+            <input type="text" placeholder="Rajouter du texte" id="text2">
+            <button onclick="add_text2()">Ok</button>
+
+            <script>
+
+                // changer l'id du before, la mettre sur le nouveau et enlever l'ancien
+                // enrgistrer les changements sur la page html
+
+                function add_text1(){
+                    let before = document.getElementById("before1")
+                    let text1 = document.getElementById("text1")
+                    let newtext = document.createElement("p")
+                    console.log("test1")
+                    newtext.textContent = text1.value
+                    console.log(newtext)
+                    before.append(newtext)
+                }
+                function add_text2(){
+                    let before = document.getElementById("before2")
+                    let text2 = document.getElementById("text2")
+                    let newtext = document.createElement("p")
+                    console.log("test2")
+                    newtext.textContent = text2.value
+                    console.log(newtext)
+                    before.append(newtext)
+                }
+                
+            </script>
+
+        </main>
+
+        <footer>
+
+            <a href="../../Code/MonSite/index.html">Thanks Goodbye</a>
+            <a href="entrance.html">Entrance</a>
+
+        </footer>
+
+    </body>
+
+</html>

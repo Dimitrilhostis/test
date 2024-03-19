@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Muscu</title>
+        <link  rel = "stylesheet" type = "text/css" href = "style.css"></link>
+
+    </head>
+
+    <body>
+
+        <header>
+            <nav id="header_menu" style="display: block;">
+                <ul>
+                    <li><a href="index.html" id="index">Muscu</a></li> 
+                    <li><a href="">track</a></li>
+                    <li><a href="shop.html">shop</a> </li>
+                    <li><a href="idea.html">idea</a></li>
+                    <li><img src="img/menu.png" onclick="open_close_menu()"></li> 
+                </ul>
+            </nav>
+            <img src="img/menu.png" id="menu" onclick="open_close_menu()" style="display: none;">
+
+            <script>
+                function open_close_menu() {
+                    console.log("call");
+                    var menu = document.getElementById("header_menu");
+                    let logo = document.getElementById("menu");
+                    if (menu.style.display === "block") {
+                        menu.style.display = "none";
+                        logo.style.display = "block"
+                    } else {
+                        menu.style.display = "block";
+                        logo.style.display = "none"
+                    }
+                    }
+            </script>
+
+        </header>
+
+        <main>
+
+            <h1>Ici sera affiché le tracking de la personne, avec le poids, la masse musculaire etc...</h1>
+
+        </main>
+
+        <footer>
+
+            <a href="../../Code/MonSite/index.html">Thanks Goodbye</a>
+            <a href="entrance.html">Entrance</a>
+
+        </footer>
+
+    </body>
+
+</html>
